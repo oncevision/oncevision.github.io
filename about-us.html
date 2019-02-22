@@ -134,24 +134,6 @@ President</div>
                   </div>
               </div>
             </form>
-          <script>
-            $(document).ready(function() {
-              $(".recatchaForm").submit(function(event){
-                var recaptcha = $("#g-recaptcha-response").val();
-                if(recaptcha === "") {
-                  event.preventDefault();
-                alert("Please Check Recaptcha");
-              }
-                event.preventDefault();
-                  $.post("submit.php",{
-                      "secret":"6LeER5MUAAAAAPxT-TUCuM_Fx-YT1hrNav7Ru8Xz",
-                      "response":recaptcha
-                },function(ajaxResponse){
-                  console.log(ajaxResponse);
-                  });
-              });
-            });
-          </script>
         </div>
     </div>
     </div>
