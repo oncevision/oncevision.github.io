@@ -2,6 +2,13 @@
 <html >
 <head>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LeER5MUAAAAAKrg5wo7OZlbOyl1HvZLfH3Iknn-'
+        });
+      };
+    </script>
   <!-- Site made with Mobirise Website Builder v4.9.3, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,7 +113,7 @@ We will contact you with an answer ASAP.
 Tom Edgell
 ONCE Consulting Group Inc.
 President</div>
-            <form class="mbr-form recaptchaForm" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="uKuz76EXobz9yNinfAJvOZtbs+3g4efrQjf9S0SOAcMMjRaLbrSZqgyEo0xmWgZ+X890roMg24lMXjmtjg/OF8luULmpeX91usHidIiZ6vuRQ8xgIE5DlaRYTvVWvHFY">
+            <form class="mbr-form" action="?" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="uKuz76EXobz9yNinfAJvOZtbs+3g4efrQjf9S0SOAcMMjRaLbrSZqgyEo0xmWgZ+X890roMg24lMXjmtjg/OF8luULmpeX91usHidIiZ6vuRQ8xgIE5DlaRYTvVWvHFY">
                 <div data-for="name">
                     <div class="form-group">
                         <input type="text" class="form-control px-3" name="name" data-form-field="Name" placeholder="Name" required="" id="name-header15-2h">
@@ -128,12 +135,17 @@ President</div>
                 <div class="form-group">
                 <div class="col-sm-offset-2 sm-10">
                 <div class="g-recaptcha" data-sitekey="6LeER5MUAAAAAKrg5wo7OZlbOyl1HvZLfH3Iknn-"></div>
+                  <div id="html_element">
+                  </div>
                   <div>
                     <span class="input-group-btn"><button href="" type="submit" class="btn btn-form btn-primary display-4"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>SEND FORM</button></span>
                   </div>
                   </div>
               </div>
             </form>
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
         </div>
     </div>
     </div>
