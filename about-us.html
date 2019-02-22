@@ -105,7 +105,7 @@ We will contact you with an answer ASAP.
 Tom Edgell
 ONCE Consulting Group Inc.
 President</div>
-            <form class="mbr-form" action="?" method="post" onsubmit="return submitUserForm();" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="uKuz76EXobz9yNinfAJvOZtbs+3g4efrQjf9S0SOAcMMjRaLbrSZqgyEo0xmWgZ+X890roMg24lMXjmtjg/OF8luULmpeX91usHidIiZ6vuRQ8xgIE5DlaRYTvVWvHFY">
+            <form class="mbr-form" method="post" action="return submitUserForm()" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="uKuz76EXobz9yNinfAJvOZtbs+3g4efrQjf9S0SOAcMMjRaLbrSZqgyEo0xmWgZ+X890roMg24lMXjmtjg/OF8luULmpeX91usHidIiZ6vuRQ8xgIE5DlaRYTvVWvHFY">
               <div data-for="name">
                     <div class="form-group">
                         <input type="text" class="form-control px-3" name="name" data-form-field="Name" placeholder="Name" required="" id="name-header15-2h">
@@ -136,7 +136,7 @@ President</div>
 <script>
 function submitUserForm() {
     var response = grecaptcha.getResponse();
-    if(response.length == 0) {
+  if(response.length == 0) {
         document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         return false;
     }
